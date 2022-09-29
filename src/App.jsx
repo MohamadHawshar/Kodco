@@ -1,27 +1,30 @@
 import React from 'react'
 import styles from './style'
 import { Navbar, Hero, Services, Footer } from './components'
+import Copyright from './components/Copyright'
+
 
 const App = () => (
-    <div className='bg-white w-full overflow-hidden'>
-      <div className={`${styles.paddingX} ${styles.flexCenter}}`} > 
-        <div className={`${styles.boxWidth}`}>
+  <div className='bg-white w-full overflow-hidden'>
+    <div className={`${styles.paddingX} ${styles.flexCenter} bg-white w-full fixed top-0 z-50`} >
+      <div className={`${styles.boxWidth}`}>
         <Navbar />
-        </div>
       </div>
-      <div className={`bg-primary ${styles.flexStart}`}>
-        <div className={`${styles.boxWidth}`}>
-          <Hero />
-        </div>
-      </div>
-      <div className={`bg-primary ${styles.paddingX} ${styles.flexStart}`}>
-        <div className={`${styles.boxWidth}`}>
-          <Services />
-          <Footer />
-        </div>
-        </div>
     </div>
-  )
+    <div className={`bg-white ${styles.flexStart}`}>
+      <div className={`${styles.boxWidth}`}>
+        <Hero />
+      </div>
+    </div>
+    <div className={`  ${styles.flexStart}`}>
+      <div className={`${styles.boxWidth}`}>
+        <Services />
+        <Footer />
+        <Copyright />
+      </div>
+    </div>
+  </div>
+)
 
 
 export default App
