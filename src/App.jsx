@@ -1,7 +1,6 @@
 import React from 'react'
 import styles from './style'
-import { Navbar, Hero, Services, Footer } from './components'
-import Copyright from './components/Copyright'
+import { Navbar, Hero, Services, Footer, Copyright } from './components'
 
 
 const App = () => (

@@ -1,13 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="./src/assets/icon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="keywords" content="Kodco, Construction, Laval, Montréal">
+  <meta name="application-name" content="Kodco, Construction">
+  <meta name="author" content="Kodco Construction">
+  <meta name="description"
+    content="L'entreprise de construction kodco située à Laval Québec, réalise des plans de construction à Laval et Montréal, pour des projets résidentiels, commerciaux et de rénovation de maisons.
+    The construction company kodco located in Laval Quebec, realizes construction plans in Laval and Montreal, for residential, commercial and home renovation projects." />
+  <title>Kodco Construction</title>
+</head>
+
+<body>
+
+  <form name="contact_form" netlify netlify-honeypot="bot-field" hidden>
+    <label><input type="text" id="fname" name="courriel" placeholder="Courriel"/></label>
+    <label><input type="text" id="fname" name="nom" placeholder="Nom et Prenom" /></label>
+    <label><textarea name="contenu"></textarea></label>
+    <label><input type="file" name="attachment" ></input></label>
+    <input type="submit" value="Envoyer"/>
+  </form>
+
+
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
+</body>
+
 </html>
