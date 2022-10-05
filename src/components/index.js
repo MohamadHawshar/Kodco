@@ -5,6 +5,8 @@ import Services from "./Services";
 import Copyright from "./Copyright";
 import Map from "./Map"
 import Form from "./Form"
+import Projects from "./Projects";
+import Project from "./Project";
 
 export {
   Navbar,
@@ -13,5 +15,7 @@ export {
   Services,
   Copyright,
   Map,
-  Form
+  Form,
+  Projects,
+  Project
 };

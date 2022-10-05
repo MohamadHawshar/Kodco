@@ -2,6 +2,7 @@ import React from 'react'
 import { useState } from 'react'
 import { close, logo, menu } from "../assets";
 import { navLinks } from '../constants'
+import { HashLink as Link } from 'react-router-hash-link';
 
 const Navbar = () => {
 
@@ -18,9 +19,14 @@ const Navbar = () => {
             ${index === navLinks.length - 1 ? 'mr-0' : 'mr-10'}
             uppercase`}
           >
-            <a href={`#${nav.id}`}>
-              {nav.title}
-            </a>
+            {
+                nav.id == 'Projects'? <Link to={`/${nav.id}#Projects`}>{nav.title}</Link> : nav.id == 'home'? 
+                <Link to={`/#home`}>{nav.title}</Link> : 
+                nav.id == 'services'? <Link to={`/#services`}>{nav.title}</Link> :
+                <a href={`#${nav.id}`}>
+                  {nav.title}
+                </a>
+              }
           </li>
         ))}
       </ul>
@@ -42,9 +48,14 @@ const Navbar = () => {
             ${index === navLinks.length - 1 ? 'mr-0' : 'mb-4'}
             uppercase`}
               >
-                <a href={`#${nav.id}`}  >
+                {
+                nav.id == 'Projects'? <Link to={`/${nav.id}#Projects`}>{nav.title}</Link> : nav.id == 'home'? 
+                <Link to={`/#home`}>{nav.title}</Link> : 
+                nav.id == 'services'? <Link to={`/#services`}>{nav.title}</Link> :
+                <a href={`#${nav.id}`}>
                   {nav.title}
                 </a>
+              }
               </li>
             ))}
           </ul>
@@ -53,5 +64,6 @@ const Navbar = () => {
     </nav>
   )
 }
+
 
 export default Navbar

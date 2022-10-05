@@ -85,3 +85,28 @@ export const socialMedia = [
     link: "https://www.linkedin.com/",
   },
 ];
+
+
+export const projects = [
+  {
+    id: 1,
+    title: "Project 1",
+    category: "commercial",
+    images: [instagram],
+    description: ["lorem ipsum dolor sit amet", "lorem ipsum dolor sit amet", "lorem ipsum dolor sit amet"],
+  },
+  {
+    id: 2,
+    title: "Project 2",
+    category: "residentiel",
+    images: [instagram],
+    description: ["lorem ipsum dolor sit amet", "lorem ipsum dolor sit amet", "lorem ipsum dolor sit amet"],
+  },
+  {
+    id: 3,
+    title: "Project 3",
+    category: "renovation",
+    images: [instagram],
+    description: ["lorem ipsum dolor sit amet", "lorem ipsum dolor sit amet", "lorem ipsum dolor sit amet"],
+  },
+];
