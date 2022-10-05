@@ -13,6 +13,16 @@ import mail from ".//mail.svg";
 import helmet from ".//helmet.svg";
 import house_hero from ".//house_hero_image_homepage.png"
 import arrow from ".//arrow.svg"
+import p1_i0 from ".//p1_i0.jpg"
+import p1_i1 from ".//p1_i1.jpg"
+import p2_i0 from ".//p2_i0.jpg"
+import p3_i0 from ".//p3_i0.jpg"
+import p3_i1 from ".//p3_i1.jpg"
+import p3_i2 from ".//p3_i2.jpg"
+import p3_i3 from ".//p3_i3.jpg"
+import p3_i4 from ".//p3_i4.jpg"
+import p4_i0 from ".//p4_i0.jpg"
+import p5_i0 from ".//p5_i0.jpg"
 
 export {
   logo,
@@ -29,5 +39,15 @@ export {
   mail,
   helmet,
   house_hero,
-  arrow
+  arrow,
+  p1_i0,
+  p1_i1,
+  p2_i0,
+  p3_i0,
+  p3_i1,
+  p3_i2,
+  p3_i3,
+  p3_i4,
+  p4_i0,
+  p5_i0,
 };

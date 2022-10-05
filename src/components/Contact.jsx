@@ -28,7 +28,7 @@ const Contact = () => {
             <ul className='list-none flex flex-col flex-1'>
               {footerLinks.map((item, index) => (
                 <li className='mb-[50px] flex flex-row' key={item.id}>
-                  <img src={`${item.icon}`} className="mr-7 justify-center w-5" alt={`${item.name} kodco construction`} />
+                  <img src={`${item.icon}`} className="mr-3 justify-center w-5" alt={`${item.name} kodco construction`} />
                   <span className="text-white lg:text-[18px] text-[14px]">{item.value}</span>
 
                 </li>
