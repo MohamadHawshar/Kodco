@@ -90,21 +90,21 @@ export const socialMedia = [
 export const projects = [
   {
     id: 1,
-    title: "Project 1",
+    title: "Titre de Project 1",
     category: "commercial",
     images: [instagram],
     description: ["lorem ipsum dolor sit amet", "lorem ipsum dolor sit amet", "lorem ipsum dolor sit amet"],
   },
   {
     id: 2,
-    title: "Project 2",
+    title: "Titre de Project 2",
     category: "residentiel",
     images: [instagram],
     description: ["lorem ipsum dolor sit amet", "lorem ipsum dolor sit amet", "lorem ipsum dolor sit amet"],
   },
   {
     id: 3,
-    title: "Project 3",
+    title: "Titre de Project 3",
     category: "renovation",
     images: [instagram],
     description: ["lorem ipsum dolor sit amet", "lorem ipsum dolor sit amet", "lorem ipsum dolor sit amet"],

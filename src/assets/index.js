@@ -12,6 +12,7 @@ import phone from ".//phone.svg";
 import mail from ".//mail.svg";
 import helmet from ".//helmet.svg";
 import house_hero from ".//house_hero_image_homepage.png"
+import arrow from ".//arrow.svg"
 
 export {
   logo,
@@ -27,5 +28,6 @@ export {
   phone,
   mail,
   helmet,
-  house_hero
+  house_hero,
+  arrow
 };
