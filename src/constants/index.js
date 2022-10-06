@@ -55,7 +55,7 @@ export const services = [
 
   },
   {
-    title: "renovation",
+    id: "renovation",
     icon: renovation,
     title: "Rénovation",
     content: "Lorem ipsum dolor sit amet. Non quae deleniti ut harum voluptatum eum voluptatem rerum et voluptatem recusandae aut nisi dolor ut alias reiciendis sed sint similique.",
@@ -106,42 +106,48 @@ export const socialMedia = [
   },
 ];
 
-export const categories = ["Tous", "Résidentiel", "Commercial", "Rénovation"];
+export const categories = [
+  { id: "all", title: "Tout" },
+  { id: "residentiel", title: "Résidentiel" },
+  { id: "commercial", title: "Commercial" },
+  { id: "renovation", title: "Rénovation" },
+];
 
 export const projects = [
   {
     id: 1,
     title: "Titre de Project 1",
-    category: "residentiel",
+    category: ["residentiel","all"],
     images: [p1_i0, p1_i1],
     description: ["lorem ipsum dolor sit amet", "lorem ipsum dolor sit amet", "lorem ipsum dolor sit amet"],
   },
   {
     id: 2,
     title: "Titre de Project 2",
-    category: "residentiel",
+    category: ["residentiel","all"],
     images: [p2_i0],
     description: ["lorem ipsum dolor sit amet", "lorem ipsum dolor sit amet", "lorem ipsum dolor sit amet"],
   },
+  
   {
     id: 3,
-    title: "Titre de Project 3",
-    category: "commercial",
-    images: [p3_i0, p3_i1, p3_i2, p3_i3, p3_i4],
-    description: ["lorem ipsum dolor sit amet", "lorem ipsum dolor sit amet", "lorem ipsum dolor sit amet"],
-  },
-  {
-    id: 4,
     title: "Titre de Project 4",
-    category: "residentiel",
+    category: ["residentiel","all"],
     images: [p4_i0],
     description: ["lorem ipsum dolor sit amet", "lorem ipsum dolor sit amet", "lorem ipsum dolor sit amet"],
   },
   {
-    id: 5,
+    id: 4,
     title: "Titre de Project 5",
-    category: "residentiel",
+    category: ["residentiel","all"],
     images: [p5_i0],
+    description: ["lorem ipsum dolor sit amet", "lorem ipsum dolor sit amet", "lorem ipsum dolor sit amet"],
+  },
+  {
+    id: 5,
+    title: "Titre de Project 3",
+    category: ["commercial","all","renovation"],
+    images: [p3_i0, p3_i1, p3_i2, p3_i3, p3_i4],
     description: ["lorem ipsum dolor sit amet", "lorem ipsum dolor sit amet", "lorem ipsum dolor sit amet"],
   },
 ];
