@@ -8,6 +8,7 @@ import Form from "./Form"
 import Projects from "./Projects";
 import Project from "./Project";
 
+
 export {
   Navbar,
   Footer,
@@ -17,5 +18,6 @@ export {
   Map,
   Form,
   Projects,
-  Project
+  Project,
+
 };

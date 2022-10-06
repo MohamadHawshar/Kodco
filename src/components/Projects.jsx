@@ -12,7 +12,8 @@ const Projects = ({category, changeCategory}) => {
         <hr className={` ${styles.marginX}  border-t-neutral-600 border-t-[1px] mb-2`} />
         <ul className={`list-none flex flex-row flex-1 items-start justify-start ${styles.marginX}`}>
             {categories.map((category, index) => (
-                <li className={`flex flex-row md:text-[20px] text-[12px] mr-5 font-semibold text-primary cursor-pointer`} onClick={() => changeCategory(category.id)} key={index}>
+                <li className={`flex flex-row md:text-[20px] text-[12px] mr-5 font-semibold text-primary cursor-pointer`} 
+                onClick={() => changeCategory(category.id)} key={index}>
                     {category.title}
                 </li>
             ))}
@@ -20,10 +21,9 @@ const Projects = ({category, changeCategory}) => {
         <hr className={`${styles.marginX}  border-t-neutral-600 border-t-[1px] mt-2`} />
       
       {projects.filter(project => project.category.includes(category)).map((project, index) => (
-        <Project key={project.id} project={project} index={index}/>
+        <Project  project={project} key={index}/>
       ))
       }
-      
 
     </section>
   )

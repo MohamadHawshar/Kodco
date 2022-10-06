@@ -2,11 +2,12 @@ import React from 'react'
 import styles from '../style'
 import { arrow } from '../assets'
 
-const Project = ({ key, index, project }) => {
+const Project = ({  index, project }) => {
     return (
         <div className={`${project.id % 2 == 0 ? 'bg-secondary text-white' : 'bg-white text-black'}
                         ${styles.flexCenter} flex flex-col items-center justify-center w-full  ${styles.paddingY}
-                        `}>
+                        `}
+                        key={index}>
             <div className={`${styles.flexCenter} px-0 w-full 
                                  items-center md:flex-row flex-col  justify-center  `}
             >
