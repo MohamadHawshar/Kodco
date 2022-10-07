@@ -1,9 +1,9 @@
 import styles from '../style'
 import { projects, categories } from '../constants'
 import Project from './Project'
+import ImageSlider from './ImageSlider'
 
 const Projects = ({category, changeCategory}) => {
-    console.log(category);
     let count = 0;
   return (
     <section id="Projects" className={` bg-white px-0 w-full 
@@ -24,7 +24,7 @@ const Projects = ({category, changeCategory}) => {
         <Project  project={project} key={index}/>
       ))
       }
-
+      {/* <ImageSlider slides={projects[4].images} /> */}
     </section>
   )
 }

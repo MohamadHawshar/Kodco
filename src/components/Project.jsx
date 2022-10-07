@@ -1,10 +1,11 @@
 import React from 'react'
 import styles from '../style'
 import { arrow } from '../assets'
+import ImageSlider from './ImageSlider'
 
 const Project = ({  index, project }) => {
     return (
-        <div className={`${project.id % 2 == 0 ? 'bg-secondary text-white' : 'bg-white text-black'}
+        <div className={`${project.id % 2 == 1 ? 'bg-secondary text-white' : 'bg-white text-black'}
                         ${styles.flexCenter} flex flex-col items-center justify-center w-full  ${styles.paddingY}
                         `}
                         key={index}>
@@ -24,12 +25,13 @@ const Project = ({  index, project }) => {
                     </ul>
                 </div>
                 <div className='flex mt-10'>
-                    <img src={project.images[0]} alt={project.title} className=" mx-auto  
+                    {/* <img src={project.images[0]} alt={project.title} className=" mx-auto  
                     xl:w-[700px]  lg:w-[800px] md:w-[500px] w-[90%]  
                     xl:h-[450px] lg:h-[500px] md:h-[300px] h-[60%]
                     transition ease-in-out delay-150 hover:-translate-y-1 
                     hover:scale-110  duration-300
-                    cursor-pointer" />
+                    cursor-pointer" /> */}
+                    <ImageSlider id={project.id} images={project.images} />
                 </div>
             </div>
 

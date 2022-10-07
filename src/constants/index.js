@@ -115,14 +115,14 @@ export const categories = [
 
 export const projects = [
   {
-    id: 1,
+    id: 0,
     title: "Titre de Project 1",
     category: ["residentiel","all"],
-    images: [p1_i0, p1_i1],
+    images: ["/p1_i0.jpg", "/p1_i1.jpg"],
     description: ["lorem ipsum dolor sit amet", "lorem ipsum dolor sit amet", "lorem ipsum dolor sit amet"],
   },
   {
-    id: 2,
+    id: 1,
     title: "Titre de Project 2",
     category: ["residentiel","all"],
     images: [p2_i0],
@@ -130,21 +130,21 @@ export const projects = [
   },
   
   {
-    id: 3,
+    id: 2,
     title: "Titre de Project 4",
     category: ["residentiel","all"],
     images: [p4_i0],
     description: ["lorem ipsum dolor sit amet", "lorem ipsum dolor sit amet", "lorem ipsum dolor sit amet"],
   },
   {
-    id: 4,
+    id: 3,
     title: "Titre de Project 5",
     category: ["residentiel","all"],
     images: [p5_i0],
     description: ["lorem ipsum dolor sit amet", "lorem ipsum dolor sit amet", "lorem ipsum dolor sit amet"],
   },
   {
-    id: 5,
+    id: 4,
     title: "Titre de Project 3",
     category: ["commercial","all","renovation"],
     images: [p3_i0, p3_i1, p3_i2, p3_i3, p3_i4],
