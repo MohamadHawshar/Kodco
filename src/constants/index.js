@@ -118,7 +118,7 @@ export const projects = [
     id: 0,
     title: "Titre de Project 1",
     category: ["residentiel","all"],
-    images: ["/p1_i0.jpg", "/p1_i1.jpg"],
+    images: [p1_i0, p1_i1],
     description: ["lorem ipsum dolor sit amet", "lorem ipsum dolor sit amet", "lorem ipsum dolor sit amet"],
   },
   {

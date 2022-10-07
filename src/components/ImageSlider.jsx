@@ -1,11 +1,10 @@
 import React from 'react'
 import { useState } from 'react'
-import { projects, categories } from '../constants'
 
-const ImageSlider = ({ id, images }) => {
+const ImageSlider = ({ images }) => {
     const slides = images
     const [current, setCurrent] = useState(0)
-    console.log(slides)
+
     const gotToPrevious = () => {
         setCurrent(current === 0 ? slides.length - 1 : current - 1)
     }

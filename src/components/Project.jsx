@@ -25,13 +25,7 @@ const Project = ({  index, project }) => {
                     </ul>
                 </div>
                 <div className='flex mt-10'>
-                    {/* <img src={project.images[0]} alt={project.title} className=" mx-auto  
-                    xl:w-[700px]  lg:w-[800px] md:w-[500px] w-[90%]  
-                    xl:h-[450px] lg:h-[500px] md:h-[300px] h-[60%]
-                    transition ease-in-out delay-150 hover:-translate-y-1 
-                    hover:scale-110  duration-300
-                    cursor-pointer" /> */}
-                    <ImageSlider id={project.id} images={project.images} />
+                    <ImageSlider images={project.images} />
                 </div>
             </div>
 
