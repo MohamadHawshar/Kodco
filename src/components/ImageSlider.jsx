@@ -58,8 +58,8 @@ const ImageSlider = ({ images }) => {
 
         <div className=' relative
                     mx-auto  
-                    md:w-[100vh] sm:w-[70vh] ss:w-[50vh] sss:w-[45vh] xs:w-[35vh] w-[35vh] 
-                    md:h-[70vh] sm:h-[50vh] ss:h-[35vh] sss:h-[30vh] xs:h-[25vh] h-[25vh]
+                    md:w-[100vh] sm:w-[70vh] ss:w-[50vh] sss:w-[40vh] xs:w-[35vh] w-[35vh] 
+                    md:h-[70vh] sm:h-[50vh] ss:h-[35vh] sss:h-[28vh] xs:h-[25vh] h-[25vh]
                     transition ease-in-out delay-150 hover:-translate-y-1 
                     hover:scale-110  duration-300
 
