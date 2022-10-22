@@ -58,13 +58,15 @@ const ImageSlider = ({ images }) => {
 
         <div className=' relative
                     mx-auto  
-                    md:w-[100vh] sm:w-[70vh] ss:w-[40vh] w-[30vh] 
-                    md:h-[70vh] sm:h-[50vh] ss:h-[30vh] h-[20vh]
+                    md:w-[100vh] sm:w-[70vh] ss:w-[50vh] sss:w-[45vh] xs:w-[35vh] w-[35vh] 
+                    md:h-[70vh] sm:h-[50vh] ss:h-[35vh] sss:h-[30vh] xs:h-[25vh] h-[25vh]
                     transition ease-in-out delay-150 hover:-translate-y-1 
                     hover:scale-110  duration-300
 
         '>
             <img loading="lazy" className={`absolute bg-fill bg-no-repeat bg-center  object-fill w-full h-full
+
+            
                  `} src={slides[current]} />
             <div className='absolute top-[50%] z-10 md:text-[40px] text-[30px] text-white font-bold cursor-pointer
              left-[3%] 
