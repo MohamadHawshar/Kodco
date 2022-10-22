@@ -30,7 +30,7 @@ import gcr from ".//gcr.png"
 import ccq from ".//ccq.jpg"
 import residential_bg from ".//residential_bg.jpg"
 import commercial_bg from ".//commercial_bg.jpg"
-
+import building_bg from ".//building_bg.webp"
 export {
   logo,
   menu,
@@ -63,5 +63,6 @@ export {
   gcr,
   ccq,
   residential_bg,
-  commercial_bg
+  commercial_bg,
+  building_bg
 };

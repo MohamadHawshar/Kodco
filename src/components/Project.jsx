@@ -31,7 +31,7 @@ const Project = ({  index, project }) => {
 
         // </div>
 
-        <div className={`${project.id % 2 == -1 ? 'bg-secondary text-white' : 'bg-white text-black'}
+        <div className={`${project.id % 2 == -1 ? 'bg-secondary text-white' : ' text-black'}
                         ${styles.flexCenter} flex flex-col items-center justify-center w-full  ${styles.paddingY}
                         `}
                         key={index}>

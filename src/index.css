@@ -50,7 +50,7 @@ background: radial-gradient(circle, rgba(80,123,205,1) 0%, rgba(51,78,147,1) 100
 #home {
   /* background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(82.55deg, rgba(28, 45, 88, 0.3) 1.15%, rgba(28, 34, 88, 0) 88.3%),
   url(".\\assets\\Kodco_group.jpg"); */
-  background-image: url(".\\assets\\Kodco_group.jpg");
+  background-image: url(".\\assets\\Kodco_group_improved.jpg");
   width:100%;
   background-color: #cccccc;
   background-repeat: no-repeat;
