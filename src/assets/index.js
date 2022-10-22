@@ -24,6 +24,13 @@ import p3_i4 from ".//p3_i4.jpg"
 import p4_i0 from ".//p4_i0.jpg"
 import p5_i0 from ".//p5_i0.jpg"
 import Kodco_group from ".//Kodco_group.jpg"
+import acq from ".//acq.png"
+import rbq from ".//rbq.svg"
+import gcr from ".//gcr.png"
+import ccq from ".//ccq.jpg"
+import residential_bg from ".//residential_bg.jpg"
+import commercial_bg from ".//commercial_bg.jpg"
+
 export {
   logo,
   menu,
@@ -51,4 +58,10 @@ export {
   p4_i0,
   p5_i0,
   Kodco_group,
+  acq,
+  rbq,
+  gcr,
+  ccq,
+  residential_bg,
+  commercial_bg
 };

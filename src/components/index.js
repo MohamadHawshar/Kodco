@@ -7,6 +7,7 @@ import Map from "./Map"
 import Form from "./Form"
 import Projects from "./Projects";
 import Project from "./Project";
+import Certificats from "./Certificats";
 
 
 export {
@@ -19,5 +20,5 @@ export {
   Form,
   Projects,
   Project,
-
+  Certificats,
 };

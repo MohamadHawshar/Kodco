@@ -18,6 +18,12 @@ import {
   p3_i4,
   p4_i0,
   p5_i0,
+  acq,
+  rbq,
+  gcr,
+  ccq,
+  residential_bg,
+  commercial_bg
 } from "../assets";
 
 export const navLinks = [
@@ -41,14 +47,14 @@ export const navLinks = [
 export const services = [
   {
     id: "residentiel",
-    icon: residentiel,
+    icon: residential_bg,
     title: "Résidentiel",
     content: "Kodco s'assure que vos projets immobiliers se réalisent dans les délais que vous attendez, avec toute la rigueur que vous souhaitez.",
 
   },
   {
     id: "commercial",
-    icon: store,
+    icon: commercial_bg,
     title: "Commercial",
     content: "Que ce soit pour des projets résidentiels ou commerciaux mixtes, vous pouvez vous fier au professionnalisme de Kodco.",
 
@@ -149,5 +155,32 @@ export const projects = [
     category: ["commercial","all","renovation"],
     images: [p3_i0, p3_i1, p3_i2, p3_i3, p3_i4],
     description: ["lorem ipsum dolor sit amet", "lorem ipsum dolor sit amet", "lorem ipsum dolor sit amet"],
+  },
+];
+
+export const certificats = [
+  {
+    id: 0,
+    title: "acq",
+    image: acq,
+    alt: "acq",
+  },
+  {
+    id: 1,
+    title: "rbq",
+    image: rbq,
+    alt: "rbq",
+  },
+  {
+    id: 2,
+    title: "gcr",
+    image: gcr,
+    alt: "gcr",
+  },
+  {
+    id: 3,
+    title: "ccq",
+    image: ccq,
+    alt: "ccq",
   },
 ];

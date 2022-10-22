@@ -58,8 +58,8 @@ const ImageSlider = ({ images }) => {
 
         <div className=' relative
                     mx-auto  
-                    md:w-[100vh]  w-[30vh] 
-                    md:h-[70vh] h-[20vh]
+                    md:w-[100vh] sm:w-[70vh] ss:w-[40vh] w-[30vh] 
+                    md:h-[70vh] sm:h-[50vh] ss:h-[30vh] h-[20vh]
                     transition ease-in-out delay-150 hover:-translate-y-1 
                     hover:scale-110  duration-300
 
@@ -67,12 +67,12 @@ const ImageSlider = ({ images }) => {
             <img loading="lazy" className={`absolute bg-fill bg-no-repeat bg-center  object-fill w-full h-full
                  `} src={slides[current]} />
             <div className='absolute top-[50%] z-10 md:text-[40px] text-[30px] text-white font-bold cursor-pointer
-            md:left-3 sm:left-12 left-6 
+             left-[3%] 
             transform -translate-y-1/2
             '
                 onClick={gotToPrevious}>❮</div>
             <div className='absolute top-[50%] z-10 md:text-[40px] text-[30px] text-white font-bold cursor-pointer
-            md:right-3 sm:right-12 right-6 
+            right-[3%] 
             transform -translate-y-1/2
             '
                 onClick={gotToNext}>❯</div>
@@ -80,11 +80,11 @@ const ImageSlider = ({ images }) => {
             
 
 
-            <ul className=' absolute bottom-0 h-20 w-full  mx-auto  z-10 text-[80px] justify-center flex flex-row items-center   '>
+            <ul className=' absolute bottom-[8%] h-0 w-full  mx-auto  z-10 sm:text-[80px] text-[50px] justify-center flex flex-row items-center   '>
                 {slides.map((slide, index) => (
 
-                    <li className={` pr-1 ${index == current ? "text-primary opacity-90" : "text-white"}  font-bold cursor-pointer`} onClick={() => gotToSlide(index)} key={index}>
-                        ‧
+                    <li className={` pr-1 ${index == current ? "text-primary opacity-90" : "text-white"} h-auto  font-bold cursor-pointer`} onClick={() => gotToSlide(index)} key={index}>
+                        ·
                     </li>
 
                 ))}
