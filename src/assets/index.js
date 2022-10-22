@@ -23,7 +23,7 @@ import p3_i3 from ".//p3_i3.jpg"
 import p3_i4 from ".//p3_i4.jpg"
 import p4_i0 from ".//p4_i0.jpg"
 import p5_i0 from ".//p5_i0.jpg"
-
+import Kodco_group from ".//Kodco_group.jpg"
 export {
   logo,
   menu,
@@ -50,4 +50,5 @@ export {
   p3_i4,
   p4_i0,
   p5_i0,
+  Kodco_group,
 };

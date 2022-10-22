@@ -8,10 +8,10 @@ const Navbar = () => {
 
   const [toggle, settoggle] = useState(false)
   return (
-    <nav className=' bg-white w-full flex py-6 justify-between items-center navbar '>
+    <nav className=' bg-white w-full flex sm:py-3 py-6 justify-between items-center navbar '>
       <Link to={`/#home`}>
         <img src={logo} alt="kodco construction"
-        className="w-[100px] h-[32px]" />
+        className="md:w-[150px] md:h-[62px] w-[100px] h-[32px]" />
         </Link>
       <ul className="list-none sm:flex hidden justify-end items-center flex-1" >
         {navLinks.map((nav, index) => (
@@ -22,7 +22,7 @@ const Navbar = () => {
             uppercase`}
           >
             {
-                nav.id == 'Projects'? <Link to={`/${nav.id}#Projects`}>{nav.title}</Link> : nav.id == 'home'? 
+                nav.id == 'Projects'? <Link to={`/${nav.id}#Projects`}><div className='bg-primary text-white p-3'>{nav.title}</div></Link> : nav.id == 'home'? 
                 <Link to={`/#home`}>{nav.title}</Link> : 
                 nav.id == 'services'? <Link to={`/#services`}>{nav.title}</Link> :
                 <a href={`#${nav.id}`}>

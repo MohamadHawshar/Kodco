@@ -1,14 +1,15 @@
 import styles from '../style'
-import {house_hero} from '../assets'
+import {house_hero, Kodco_group} from '../assets'
 import { HashLink as Link } from 'react-router-hash-link';
 
 const Hero = () => (
   <section id='home' className={`flex md:flex-row flex-col 
-    ${styles.paddingY} sm:pt-[150px] pt-[130px] bg-hero-pattern
+    ${styles.paddingY} sm:pt-[150px] pt-[130px]  
     md:bg-cover md:bg-top bg-center bg-cover  bg-no-repeat 
+     md:h-[70vh] h-[50vh]
     `} title="kodco construction house image">
     <div className={`flex-1  `}>
-      <div className='flex flex-col justify-between w-full items-center font-poppins
+      <div className='hidden flex-col justify-between w-full items-center font-poppins
        text-white  '>
         <h1 className='flex-1 font-semibold ss:text-[32px] text-[18px]'>Kodco Construction</h1>
         <p className='py-[50px] xs:px-[10%] sm:px-[25%] px-[20%] ss:text-[18px] text-[11px]'>Lorem ipsum dolor sit amet. Ut doloremque consequatur aut libero sunt ut minima doloribus 

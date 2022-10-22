@@ -5,14 +5,14 @@ import ImageSlider from './ImageSlider'
 
 const Project = ({  index, project }) => {
     return (
-        <div className={`${project.id % 2 == 1 ? 'bg-secondary text-white' : 'bg-white text-black'}
+        <div className={`${project.id % 2 == -1 ? 'bg-secondary text-white' : 'bg-white text-black'}
                         ${styles.flexCenter} flex flex-col items-center justify-center w-full  ${styles.paddingY}
                         `}
                         key={index}>
             <div className={`${styles.flexCenter} px-0 w-full 
                                  items-center md:flex-row flex-col  justify-center  `}
             >
-                <div className={`text-left ${styles.marginX}`}  >
+                <div className={`text-left hidden ${styles.marginX}`}  >
                     <h1 className={` font-semibold sm:text-[40px] text-[24px] md:mb-12 mb-6 text-center`}>{project.title}</h1>
                     <ul className={` list-none sm:text-[24px] text-[16px] flex flex-col flex-1`}>{
                         project.description.map((desc, index) => (

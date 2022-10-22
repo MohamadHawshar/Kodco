@@ -12,9 +12,10 @@ const Services = ({changeCategory}) => {
         {services.map((service,index) => (
           
           <button key={service.id} className=" flex flex-col border-[1px] 
-           shadow-lg justify-start items-center p-4 m-3 
+           shadow-lg justify-start items-center lg:p-16 p-4 m-3 
         xs:text-[14px] ss:text-[14px] md:text-[18px]
-        xs:w-[258px] ss:w-[358px] md:w-[30%]  transition ease-in-out delay-150 hover:-translate-y-1 
+        xs:w-[258px] ss:w-[358px] md:w-[40%] transition ease-in-out delay-150 hover:-translate-y-1
+        lg:h-auto h-[300px] 
         hover:scale-110  duration-300"
         onClick={() => {
           changeCategory(service.id);

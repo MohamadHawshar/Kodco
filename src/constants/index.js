@@ -43,25 +43,25 @@ export const services = [
     id: "residentiel",
     icon: residentiel,
     title: "Résidentiel",
-    content: "Lorem ipsum dolor sit amet. Non quae deleniti ut harum voluptatum eum voluptatem rerum et voluptatem recusandae aut nisi dolor ut alias reiciendis sed sint similique.",
+    content: "Kodco s'assure que vos projets immobiliers se réalisent dans les délais que vous attendez, avec toute la rigueur que vous souhaitez.",
 
   },
   {
     id: "commercial",
     icon: store,
     title: "Commercial",
-    content: "Lorem ipsum dolor sit amet. Non quae deleniti ut harum voluptatum eum voluptatem rerum et voluptatem recusandae aut nisi dolor ut alias reiciendis sed sint similique.",
+    content: "Que ce soit pour des projets résidentiels ou commerciaux mixtes, vous pouvez vous fier au professionnalisme de Kodco.",
 
 
   },
-  {
-    id: "renovation",
-    icon: renovation,
-    title: "Rénovation",
-    content: "Lorem ipsum dolor sit amet. Non quae deleniti ut harum voluptatum eum voluptatem rerum et voluptatem recusandae aut nisi dolor ut alias reiciendis sed sint similique.",
+  // {
+  //   id: "renovation",
+  //   icon: renovation,
+  //   title: "Rénovation",
+  //   content: "Lorem ipsum dolor sit amet. Non quae deleniti ut harum voluptatum eum voluptatem rerum et voluptatem recusandae aut nisi dolor ut alias reiciendis sed sint similique.",
 
 
-  }
+  // }
 ]
 
 
@@ -89,11 +89,11 @@ export const footerLinks = [
 ]
 
 export const socialMedia = [
-  {
-    id: "social-media-1",
-    icon: instagram,
-    link: "https://m.facebook.com/Kodco-Construction-104069065749709/?refid=13&__tn__=%2Cg",
-  },
+  // {
+  //   id: "social-media-1",
+  //   icon: instagram,
+  //   link: "https://m.facebook.com/Kodco-Construction-104069065749709/?refid=13&__tn__=%2Cg",
+  // },
   {
     id: "social-media-2",
     icon: facebook,
@@ -110,7 +110,7 @@ export const categories = [
   { id: "all", title: "Tout" },
   { id: "residentiel", title: "Résidentiel" },
   { id: "commercial", title: "Commercial" },
-  { id: "renovation", title: "Rénovation" },
+  // { id: "renovation", title: "Rénovation" },
 ];
 
 export const projects = [
