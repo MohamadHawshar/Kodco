@@ -1,5 +1,7 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import { useState } from 'react'
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 
 const ImageSlider = ({ images }) => {
     const slides = images
@@ -14,6 +16,10 @@ const ImageSlider = ({ images }) => {
     const gotToSlide = (index) => {
         setCurrent(index)
     }
+    useEffect(() => {
+        Aos.init({duration: 2000,
+            once: true});
+    }, [])
     return (
         // <div className=' relative
         //             mx-auto  
@@ -64,7 +70,7 @@ const ImageSlider = ({ images }) => {
                     hover:scale-110  duration-300
 
         '>
-            <img loading="lazy" className={`absolute bg-fill bg-no-repeat bg-center  object-fill w-full h-full
+            <img data-aos="fade-in" data-aos-anchor-placement="top-center"  className={`absolute bg-fill bg-no-repeat bg-center  object-fill w-full h-full 
 
             
                  `} src={slides[current]} />

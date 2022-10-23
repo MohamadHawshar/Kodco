@@ -16,7 +16,16 @@ module.exports = {
       backgroundImage: {
         'hero-pattern':
           "linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(82.55deg, rgba(28, 45, 88, 0.3) 1.15%, rgba(28, 34, 88, 0) 88.3%), url('.//assets//house_hero_image_homepage.png')",
-      }
+      },
+      animation: {
+        fadeIn: "fadeIn 2s ease-in forwards"
+      },
+      keyframes: {
+        fadeIn: {
+          "0%": { opacity: 0 },
+          "100%": { opacity: 1 }
+        }
+    }
     },
     screens: {
       xs: "320px",
@@ -27,6 +36,9 @@ module.exports = {
       lg: "1200px",
       xl: "1700px",
     },
+    variants: {
+      animation: ["motion-safe"]
+  }
   },
   plugins: [],
 };

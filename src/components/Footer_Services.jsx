@@ -1,6 +1,7 @@
 import React from 'react'
 import styles from '../style'
 import { navLinks } from '../constants'
+import { HashLink as Link } from 'react-router-hash-link';
 const Footer_Services = () => {
   return (
     <div className={`${styles.paddingY} ${styles.paddingX} flex-auto hidden md:block`}>
@@ -19,9 +20,10 @@ const Footer_Services = () => {
             ${index === navLinks.length - 1 ? 'mr-0' : 'mb-[50px]'}
             `}
               >
-                <a href={`#${nav.id}`}  >
+                
+                <Link to={nav.id === "services" ? `/#${nav.id}`: `#${nav.id}`}  >
                   {nav.title}
-                </a>
+                </Link>
               </li>
             ))}
 
