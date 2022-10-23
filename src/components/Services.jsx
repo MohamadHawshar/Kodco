@@ -21,7 +21,7 @@ const Services = ({changeCategory}) => {
     flex-1 items-center sm:flex-row flex-col flex-wrap justify-evenly ${styles.paddingY}`}>
         {services.map((service,index) => (
           
-          <button data-aos="fade-in" data-aos-anchor-placement="top-center" key={service.id} className=" flex flex-col border-[1px] 
+          <button data-aos="fade-in" data-aos-anchor-placement="bottom-bottom" key={service.id} className=" flex flex-col border-[1px] 
            shadow-lg justify-start items-center m-3 
         xs:text-[14px] ss:text-[14px] md:text-[18px]
         xs:w-[258px] ss:w-[358px] md:w-[40%] 

@@ -70,7 +70,7 @@ const ImageSlider = ({ images }) => {
                     hover:scale-110  duration-300
 
         '>
-            <img data-aos="fade-in" data-aos-anchor-placement="top-center"  className={`absolute bg-fill bg-no-repeat bg-center  object-fill w-full h-full 
+            <img data-aos="fade-in"  className={`absolute bg-fill bg-no-repeat bg-center  object-fill w-full h-full 
 
             
                  `} src={slides[current]} />

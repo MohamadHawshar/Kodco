@@ -30,6 +30,7 @@ const App = () => {
             <Route path={"/"} element={
               <div>
                 <Services changeCategory={changeCategory} />
+                
                 <Certificats />
               </div>
 
