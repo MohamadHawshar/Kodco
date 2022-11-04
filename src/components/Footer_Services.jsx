@@ -21,7 +21,7 @@ const Footer_Services = () => {
             `}
               >
                 
-                <Link to={nav.id === "services" ? `/#${nav.id}`: `#${nav.id}`}  >
+                <Link to={nav.id === "services" ? `/#${nav.id}`: nav.id === "Projects" ? `/Projects#Projects` : `#${nav.id}`}  >
                   {nav.title}
                 </Link>
               </li>
