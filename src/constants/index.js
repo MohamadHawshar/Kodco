@@ -69,14 +69,14 @@ export const services = [
     id: "residentiel",
     icon: residential_bg,
     title: "Résidentiel",
-    content: "Kodco s'assure que vos projets immobiliers se réalisent dans les délais que vous attendez, avec toute la rigueur que vous souhaitez.",
+    content: "Kodco veille à ce que vos projets immobiliers soient achevés dans les délais et avec le degré d'excellence que vous exigez.",
 
   },
   {
     id: "commercial",
     icon: commercial_bg,
     title: "Commercial",
-    content: "Que ce soit pour des projets résidentiels ou commerciaux mixtes, vous pouvez vous fier au professionnalisme de Kodco.",
+    content: "Vous pouvez faire confiance au professionnalisme de Kodco pour tout travail, qu'il soit résidentiel ou commercial.",
 
 
   },
@@ -102,7 +102,7 @@ export const footerLinks = [
   {
     id: "item-2",
     name: "Mail",
-    value: "administration@kodcoconstruction.com",
+    value: "info@kodcoconstruction.com",
     icon: mail
   },
   {
