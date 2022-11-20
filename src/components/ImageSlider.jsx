@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react'
+import React, { useEffect } from 'react'
 import { useState } from 'react'
 import Aos from 'aos'
 import 'aos/dist/aos.css'
@@ -17,50 +17,12 @@ const ImageSlider = ({ images }) => {
         setCurrent(index)
     }
     useEffect(() => {
-        Aos.init({duration: 2000,
-            once: true});
+        Aos.init({
+            duration: 2000,
+            once: true
+        });
     }, [])
     return (
-        // <div className=' relative
-        //             mx-auto  
-        //             xl:w-[700px]  lg:w-[800px] md:w-[500px]  w-full
-        //             xl:h-[450px] lg:h-[500px] md:h-[300px] h-[60%]
-        //             transition ease-in-out delay-150 hover:-translate-y-1 
-        //             hover:scale-110  duration-300
-
-        // '>
-        //     <img loading="lazy" className={` bg-cover bg-no-repeat bg-center 
-        //         xl:w-[700px]  lg:w-[800px] md:w-[500px] w-[90%]  
-        //         xl:h-[450px] lg:h-[500px] md:h-[300px] h-[60%]
-        //         mx-auto 
-        //         `} src={slides[current]} />
-        //     <div className='absolute top-[50%] z-10 md:text-[40px] text-[30px] text-white font-bold cursor-pointer
-        //     md:left-3 sm:left-12 left-6 
-        //     transform -translate-y-1/2
-        //     '
-        //         onClick={gotToPrevious}>❮</div>
-        //     <div className='absolute top-[50%] z-10 md:text-[40px] text-[30px] text-white font-bold cursor-pointer
-        //     md:right-3 sm:right-12 right-6 
-        //     transform -translate-y-1/2
-        //     '
-        //         onClick={gotToNext}>❯</div>
-
-            
-
-
-        //     <ul className=' absolute bottom-0 h-20 w-full  mx-auto  z-10 text-[80px] justify-center flex flex-row items-center   '>
-        //         {slides.map((slide, index) => (
-
-        //             <li className={` pr-1 ${index == current ? "text-primary opacity-90" : "text-white"}  font-bold cursor-pointer`} onClick={() => gotToSlide(index)} key={index}>
-        //                 ‧
-        //             </li>
-
-        //         ))}
-        //     </ul>
-        // </div>
-
-
-
 
         <div className=' relative
                     mx-auto  
@@ -70,7 +32,7 @@ const ImageSlider = ({ images }) => {
                     hover:scale-110  duration-300
 
         '>
-            <img data-aos="fade-in"  className={`absolute bg-fill bg-no-repeat bg-center  object-fill w-full h-full 
+            <img loading="lazy" data-aos="fade-in" className={`absolute bg-fill bg-no-repeat bg-center  object-fill w-full h-full 
 
             
                  `} src={slides[current]} />
@@ -85,7 +47,7 @@ const ImageSlider = ({ images }) => {
             '
                 onClick={gotToNext}>❯</div>
 
-            
+
 
 
             <ul className=' absolute bottom-[8%] h-0 w-full  mx-auto  z-10 sm:text-[80px] text-[50px] justify-center flex flex-row items-center   '>

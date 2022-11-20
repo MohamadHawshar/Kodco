@@ -1,7 +1,6 @@
 import styles from '../style'
 import { projects, categories } from '../constants'
 import Project from './Project'
-import ImageSlider from './ImageSlider'
 
 const Projects = ({category, changeCategory}) => {
     let count = 0;

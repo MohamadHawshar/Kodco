@@ -1,5 +1,4 @@
 import styles from '../style'
-import { navLinks, socialMedia, footerLinks } from '../constants'
 import Map from './Map';
 import Form from './Form';
 import Footer_Services from './Footer_Services'

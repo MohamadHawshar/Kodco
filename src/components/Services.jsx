@@ -16,7 +16,7 @@ const Services = ({changeCategory}) => {
   return (
     <section id="services" className={` bg-white px-0 w-full  mb-5
     flex-1 items-center sm:flex-row flex-col ${styles.paddingY} ${styles.paddingX}`}>
-      <h1 className={`${styles.flexCenter} font-semibold md:text-[50px] text-[35px]`} >Services</h1>
+      <h2 className={`${styles.flexCenter} font-semibold md:text-[50px] text-[35px]`} >Services</h2>
       <div className={`${styles.flexCenter} bg-white px-0 w-full 
     flex-1 items-center sm:flex-row flex-col flex-wrap justify-evenly ${styles.paddingY}`}>
         {services.map((service,index) => (
@@ -33,9 +33,9 @@ const Services = ({changeCategory}) => {
          }}
           >
             <Link to="/Projects" className={`${styles.flexCenter} flex flex-col`} >
-            <img src={service.icon} alt={service.title} className={`${styles.flexCenter}  w-full  h-full transition ease-in-out delay-150 hover:-translate-y-1 
+            <img loading="lazy" src={service.icon} alt={service.title} title = {service.title}   className={`${styles.flexCenter}  w-full  h-full transition ease-in-out delay-150 hover:-translate-y-1 
         hover:scale-110  duration-300`}/>
-            <h4 className='  font-semibold text-[24px] mt-6' >{service.title}</h4>
+            <h3 className='  font-semibold text-[24px] mt-6' >{service.title}</h3>
             <p className="lg:px-16 lg:pb-16  p-4  text-center">{service.content}</p>
             </Link>
           </div>

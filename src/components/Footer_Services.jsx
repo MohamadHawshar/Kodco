@@ -5,9 +5,9 @@ import { HashLink as Link } from 'react-router-hash-link';
 const Footer_Services = () => {
   return (
     <div className={`${styles.paddingY} ${styles.paddingX} flex-auto hidden md:block`}>
-          <h1 className={`font-semibold mb-[18px] lg:text-[30px] text-[20px] text-white  `} >
+          <h2 className={`font-semibold mb-[18px] lg:text-[30px] text-[20px] text-white  `} >
             Nos services
-          </h1>
+          </h2>
           <hr className='w-[111px]  border-white border-t-[5px] mb-[50px]' />
           <ul className="list-none flex justify-end flex-col  flex-1" >
             {navLinks.map((nav, index) => (

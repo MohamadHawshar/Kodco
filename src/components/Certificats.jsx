@@ -21,7 +21,7 @@ const Certificats = () => {
               Contactez-Nous</a>
       </div>
       <div data-aos="slide-left" data-aos-duration="2000" className=' bg-center bg-fixed no-repeat bg-cover' id="certificates">
-      <h1 className={`${styles.flexCenter} ${styles.paddingY} font-semibold md:text-[50px] text-[35px]  `} >Nos Certifications</h1>
+      <h2 className={`${styles.flexCenter} ${styles.paddingY} font-semibold md:text-[50px] text-[35px]  `} >Nos Certifications</h2>
       <div className={`${styles.flexCenter}  ${styles.paddingX} px-0 w-full 
     flex-1 items-center sm:flex-row flex-col flex-wrap justify-evenly pb-5`}>
         {certificats.map((certificate,index) => (
@@ -31,7 +31,7 @@ const Certificats = () => {
         h-auto w-auto "
           >
             
-            <img data-aos="fade-in" data-aos-duration="4000" data-aos-anchor-placement="bottom-bottom" src={certificate.image} alt={certificate.alt} 
+            <img loading="lazy" data-aos="fade-in" data-aos-duration="4000" data-aos-anchor-placement="bottom-bottom" src={certificate.image} title={certificate.title}  alt={certificate.alt} 
             className={`${styles.flexCenter} sm:w-[150px] w-[90px] ${certificate.title == "ccq"? 'scale-150 ' : 'scale-100'} 
             h-auto transition ease-in-out delay-150 hover:-translate-y-1 
             hover:scale-110  duration-300`}/>

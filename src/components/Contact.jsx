@@ -5,9 +5,9 @@ import {  socialMedia, footerLinks } from '../constants'
 const Contact = () => {
   return (
     <div className={`${styles.paddingY} ${styles.paddingX} flex-auto `}>
-          <h1 className={`font-semibold mb-[18px] lg:text-[30px] text-[20px] text-white  `} >
+          <h2 className={`font-semibold mb-[18px] lg:text-[30px] text-[20px] text-white  `} >
             Contactez-Nous
-          </h1>
+          </h2>
           <hr className='w-[111px]  border-white border-t-[5px] mb-[50px]' />
           <div className='flex flex-col'>
             <ul className='list-none flex flex-row flex-1 mb-[50px]'>
@@ -20,7 +20,7 @@ const Contact = () => {
                 hover:scale-110  duration-300
                 `}>
                   <a href={`${link.link}`}>
-                    <img src={`${link.icon}`} alt={`${link.link} kodco construction`} />
+                    <img loading="lazy" src={`${link.icon}`} alt={`${link.id} `} title={`${link.id} `}/>
                   </a>
                 </li>
               ))}
@@ -28,7 +28,7 @@ const Contact = () => {
             <ul className='list-none flex flex-col flex-1'>
               {footerLinks.map((item, index) => (
                 <li className='mb-[50px] flex flex-row' key={item.id}>
-                  <img src={`${item.icon}`} className="mr-3 justify-center w-5" alt={`${item.name} kodco construction`} />
+                  <img loading="lazy" src={`${item.icon}`} className="mr-3 justify-center w-5" alt={`${item.name}  `} title={`${item.name}  `} />
                   <span className="text-white lg:text-[18px] text-[14px]">{item.value}</span>
 
                 </li>

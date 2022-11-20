@@ -3,6 +3,7 @@ import styles from './style'
 import { Navbar, Hero, Services, Footer, Copyright, Projects, Certificats } from './components'
 import { Route, Routes } from 'react-router-dom'
 
+
 const App = () => {
 
   const [category, setCategory] = useState("all");

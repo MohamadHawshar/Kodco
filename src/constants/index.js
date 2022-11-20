@@ -121,12 +121,12 @@ export const socialMedia = [
   //   link: "https://m.facebook.com/Kodco-Construction-104069065749709/?refid=13&__tn__=%2Cg",
   // },
   {
-    id: "social-media-2",
+    id: "facebook",
     icon: facebook,
     link: "https://www.facebook.com/Kodco-Construction-104069065749709/",
   },
   {
-    id: "social-media-4",
+    id: "linkedin",
     icon: linkedin,
     link: "https://www.linkedin.com/in/m-khoder-674a75235/?originalSubdomain=ca",
   },

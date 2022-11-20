@@ -10,7 +10,7 @@ const Navbar = () => {
   return (
     <nav className=' bg-white w-full flex sm:py-3 py-6 justify-between items-center navbar '>
       <Link to={`/#home`}>
-        <img src={logo} alt="kodco construction"
+        <img src={logo} title="kodco construction logo" alt="kodco construction"
         className="md:w-[150px] md:h-[62px] w-[100px] h-[32px]" />
         </Link>
       <ul className="list-none sm:flex hidden justify-end items-center flex-1" >
@@ -36,6 +36,7 @@ const Navbar = () => {
         <img
           src={toggle ? close : menu}
           alt="menu"
+          title="menu"
           className="w-[28px] h-[28px] object-contain"
           onClick={() => settoggle((prev) => !prev)} />
         <div
