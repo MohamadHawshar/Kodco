@@ -1,4 +1,4 @@
 
 User-agent: *
 Allow: /
-Sitemap: https://kodcoconstruction.com/sitemap.xml
+Sitemap: https://PVPconstruction.com/sitemap.xml

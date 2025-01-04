@@ -24,14 +24,13 @@ const ImageSlider = ({ images }) => {
     }, [])
     return (
 
-        <div className=' relative
-                    mx-auto  
-                    md:w-[100vh] sm:w-[70vh] ss:w-[50vh] sss:w-[40vh] xs:w-[35vh] w-[35vh] 
-                    md:h-[70vh] sm:h-[50vh] ss:h-[35vh] sss:h-[28vh] xs:h-[25vh] h-[25vh]
-                    transition ease-in-out delay-150 hover:-translate-y-1 
-                    hover:scale-110  duration-300
-
-        '>
+        <div
+  className='relative mx-auto 
+    md:w-[70vw] sm:w-[70vw] ss:w-[60vw] xs:w-[90vw] w-[90vw]
+    md:h-[70vh] sm:h-[70vh] ss:h-[45vh] xs:h-[50vh] h-[50vh]
+    transition ease-in-out delay-150 hover:-translate-y-1 
+    hover:scale-110 duration-300'
+>
             <img loading="lazy" data-aos="fade-in" className={`absolute bg-fill bg-no-repeat bg-center  object-fill w-full h-full 
 
             

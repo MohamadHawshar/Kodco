@@ -24,7 +24,7 @@
 
 .bg-primary-gradient {
   background: rgb(80,123,205);
-background: radial-gradient(circle, rgba(80,123,205,1) 0%, rgba(51,78,147,1) 100%);
+background: radial-gradient(circle, rgba(127, 164, 140) 0%, rgba(16,80,40,255) 100%);
 }
 
 .bg-primary-gradient-hero {
@@ -54,18 +54,17 @@ background: radial-gradient(circle, rgba(80,123,205,0.9) 0%, rgba(51,78,147,0.3)
 }
 #home {
   /* background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(82.55deg, rgba(28, 45, 88, 0.3) 1.15%, rgba(28, 34, 88, 0) 88.3%),
-  url(".\\assets\\Kodco_group.jpg"); */
-  background-image: url(".\\assets\\Kodco_group_improved.jpg");
+  url(".\\assets\\PVP_group.jpg"); */
+  background-image: url(".\\assets\\home_background.jpg");
   width:100%;
   background-color: #cccccc;
   background-repeat: no-repeat;
   background-size:cover;
-  background-position: bottom;
-  
+  background-position: top;
 }
 #certificates {
   /* background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(82.55deg, rgba(28, 45, 88, 0.3) 1.15%, rgba(28, 34, 88, 0) 88.3%),
-  url(".\\assets\\Kodco_group.jpg"); */
+  url(".\\assets\\PVP_group.jpg"); */
   background-image: url(".\\assets\\categories_bg.jpg");
   
 }

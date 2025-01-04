@@ -5,8 +5,10 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: "#334E93",
-        secondary: "#507BCD",
+        // primary: "#334E93",
+        // secondary: "#507BCD",
+        primary: "#105028",
+        secondary: "#105028",
         dimWhite: "rgba(255, 255, 255, 0.7)",
         dimBlue: "rgba(9, 151, 124, 0.1)",
       },
@@ -27,14 +29,23 @@ module.exports = {
         }
     }
     },
+    // screens: {
+    //   xs: "320px",
+    //   sss: "375px",
+    //   ss: "620px",
+    //   sm: "768px",
+    //   md: "1024px",
+    //   lg: "1200px",
+    //   xl: "1700px",
+    // },
     screens: {
       xs: "320px",
       sss: "375px",
       ss: "620px",
       sm: "768px",
       md: "1024px",
-      lg: "1200px",
-      xl: "1700px",
+      lg: "1024px",
+      xl: "1224px",
     },
     variants: {
       animation: ["motion-safe"]

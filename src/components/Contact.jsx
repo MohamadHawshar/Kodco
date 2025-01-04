@@ -10,7 +10,7 @@ const Contact = () => {
           </h2>
           <hr className='w-[111px]  border-white border-t-[5px] mb-[50px]' />
           <div className='flex flex-col'>
-            <ul className='list-none flex flex-row flex-1 mb-[50px]'>
+            {/* <ul className='list-none flex flex-row flex-1 mb-[50px]'>
               {socialMedia.map((link) => (
 
                 <li
@@ -24,7 +24,7 @@ const Contact = () => {
                   </a>
                 </li>
               ))}
-            </ul>
+            </ul> */}
             <ul className='list-none flex flex-col flex-1'>
               {footerLinks.map((item, index) => (
                 <li className='mb-[50px] flex flex-row' key={item.id}>

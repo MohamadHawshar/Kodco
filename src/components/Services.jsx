@@ -14,7 +14,7 @@ const Services = ({changeCategory}) => {
   }, [])
 
   return (
-    <section id="services" className={` bg-white px-0 w-full  mb-5
+    <section id="services" className={` bg-white px-0 w-full 
     flex-1 items-center sm:flex-row flex-col ${styles.paddingY} ${styles.paddingX}`}>
       <h2 className={`${styles.flexCenter} font-semibold md:text-[50px] text-[35px]`} >Services</h2>
       <div className={`${styles.flexCenter} bg-white px-0 w-full 
@@ -22,9 +22,9 @@ const Services = ({changeCategory}) => {
         {services.map((service,index) => (
           
           <div data-aos="fade-in" data-aos-anchor-placement="bottom-bottom" key={service.id} className=" flex flex-col border-[1px] 
-           shadow-lg justify-start items-center m-3 
+           shadow-lg justify-start items-center m-3
         xs:text-[14px] ss:text-[14px] md:text-[18px]
-        xs:w-[258px] ss:w-[358px] md:w-[40%] 
+        xs:w-[258px] ss:w-[358px] md:w-[30%] md:h-[500px]
         overflow-hidden
         transition ease-in-out delay-150 hover:-translate-y-1 
         hover:scale-110  duration-300"
@@ -48,7 +48,7 @@ const Services = ({changeCategory}) => {
         bg-primary ss:text-[18px] text-[11px]
         transition ease-in-out delay-150 hover:-translate-y-1 
         hover:scale-110 hover:bg-secondary duration-300'>
-          <p className='m-auto '>Nos Réalisation</p>
+          <p className='m-auto '>Réalisation</p>
           </button>
         </Link>
     </section>
