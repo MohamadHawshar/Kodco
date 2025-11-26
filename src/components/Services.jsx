@@ -16,31 +16,36 @@ const Services = ({changeCategory}) => {
   return (
     <section id="services" className={` bg-white px-0 w-full 
     flex-1 items-center sm:flex-row flex-col ${styles.paddingY} ${styles.paddingX}`}>
-      <h2 className={`${styles.flexCenter} font-semibold md:text-[50px] text-[35px]`} >Services</h2>
-      <div className={`${styles.flexCenter} bg-white px-0 w-full 
-    flex-1 items-center sm:flex-row flex-col flex-wrap justify-evenly ${styles.paddingY}`}>
-        {services.map((service,index) => (
-          
-          <div data-aos="fade-in" data-aos-anchor-placement="bottom-bottom" key={service.id} className=" flex flex-col border-[1px] 
-           shadow-lg justify-start items-center m-3
-        xs:text-[14px] ss:text-[14px] md:text-[18px]
-        xs:w-[258px] ss:w-[358px] md:w-[30%] md:h-[500px]
-        overflow-hidden
-        transition ease-in-out delay-150 hover:-translate-y-1 
-        hover:scale-110  duration-300"
-        onClick={() => {
-          changeCategory(service.id);
-         }}
+      <h2 className={`${styles.flexCenter} font-semibold md:text-[50px] text-[35px] text-gray-900 tracking-tight leading-tight mb-8`} >Services</h2>
+      <div className={`${styles.flexCenter} bg-white px-0 w-full ${styles.paddingY}`}>
+        <div className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+        {services.map((service) => (
+          <div
+            data-aos="fade-in"
+            data-aos-anchor-placement="bottom-bottom"
+            key={service.id}
+            className="group block bg-white border border-gray-200 rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:shadow-xl focus:outline-none focus-visible:ring-2 focus-visible:ring-primary aos-init aos-animate"
+            onClick={() => { changeCategory(service.id); }}
           >
-            <Link to="/Projects" className={`${styles.flexCenter} flex flex-col`} >
-            <img loading="lazy" src={service.icon} alt={service.title} title = {service.title}   className={`${styles.flexCenter}  w-full  h-full transition ease-in-out delay-150 hover:-translate-y-1 
-        hover:scale-110  duration-300`}/>
-            <h3 className='  font-semibold text-[24px] mt-6' >{service.title}</h3>
-            <p className="lg:px-16 lg:pb-16  p-4  text-center">{service.content}</p>
+            {/* Image wrapper: fixed height so all images line up */}
+            <Link to="/Projects" className="block">
+              <div className="relative w-full aspect-[4/3] bg-gray-100 overflow-hidden">
+                <img
+                  loading="lazy"
+                  src={service.icon}
+                  alt={service.title}
+                  title={service.title}
+                  className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                />
+              </div>
+              <div className="p-4 flex flex-col h-full">
+                <h3 className="font-semibold text-lg md:text-xl mb-2 text-center">{service.title}</h3>
+                <p className="text-sm md:text-base text-gray-600 flex-1 text-center">{service.content}</p>
+              </div>
             </Link>
           </div>
-          
         ))}
+        </div>
       </div>
       <Link to={`/Projects#Projects`}>
           <button className=' flex flex-1  w-[200px] text-white m-auto h-[42px] ss:w-[300px] ss:h-[60px] 

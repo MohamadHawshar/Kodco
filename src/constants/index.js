@@ -21,10 +21,20 @@ import {
   p11,
   p12,
   p13,
+  p14,
+  p15,
+  p16,
+  p17,
+  p18,
+  p19,
+  p20,
+  p21,
   acq,
   rbq,
   pmp,
+  amp,
   gestion_bg,
+  institutionnel_bg,
   oiq,
   aeq,
   ccq,
@@ -67,6 +77,12 @@ export const services = [
 
   },
   {
+    id: "institutionnel",
+    icon: institutionnel_bg,
+    title: "Institutionnel",
+    content: "Que ce soit pour votre projet institutionnel intérieur ou extérieur, PVP sera vous livrer un projet de qualité et dans les délais voulus.",
+  },
+  {
     id: "renovation",
     icon: gestion_bg,
     title: "Gestion de projets",
@@ -74,6 +90,7 @@ export const services = [
 
 
   }
+
 ]
 
 
@@ -88,7 +105,7 @@ export const footerLinks = [
   {
     id: "item-2",
     name: "Mail",
-    value: "gestionhkhoder@outlook.com",
+    value: "hkhoder@constructionpvp.com",
     icon: mail
   },
   {
@@ -152,7 +169,10 @@ export const projects = [
     id: 0,
     title: "Titre de Project 3",
     category: ["commercial","all","renovation"],
-    images: [  p1,
+    images: [
+      p19, p20, p21,
+      p14, p15, p16, p17, p18,  
+      p1,
       p2,
       p3,
       p4,
@@ -226,5 +246,10 @@ export const certificats = [
     title: "ccq",
     image: ccq,
     alt: "ccq",
-  }
+  },
+{    id: 4,
+    title: "amp",
+    image: amp,
+    alt: "amp",
+  },
 ];
