@@ -1,72 +1,145 @@
-import React from 'react'
-import { useState } from 'react'
-import { close, logo, menu } from "../assets";
+import React, { useState } from 'react'
+import { close, logo, menu } from '../assets'
 import { navLinks } from '../constants'
-import { HashLink as Link } from 'react-router-hash-link';
+import { HashLink as Link } from 'react-router-hash-link'
 
 const Navbar = () => {
+  const [toggle, setToggle] = useState(false)
 
-  const [toggle, settoggle] = useState(false)
+  const getLinkDestination = (nav) => {
+    if (nav.id.toLowerCase() === 'projects') {
+      return '/projects#Projects'
+    }
+
+    return `/#${nav.id}`
+  }
+
   return (
-    <nav className=' bg-primary w-full flex sm:py-3 py-3  justify-between items-center navbar '>
-      <Link to={`/#home`}>
-        <img src={logo} title="PVP construction logo" alt="PVP construction"
-        className="md:w-[150px] md:h-[62px] w-[100px] h-[60px]" />
-        </Link>
-      <ul className="list-none sm:flex hidden justify-end items-center flex-1 pr-6" >
-        {navLinks.map((nav, index) => (
-          <li
-            key={nav.id}
-            className={`font-poppins font-normal cursor-pointer text-[16px] text-white
-            ${index === navLinks.length - 1 ? 'mr-0' : 'mr-10'}
-            uppercase`}
-          >
-            {
-                nav.id == 'Projects'? <Link to={`/${nav.id}#Projects`}><div className='bg-white text-black p-3'>{nav.title}</div></Link> : nav.id == 'home'? 
-                <Link to={`/#home`}>{nav.title}</Link> : 
-                nav.id == 'services'? <Link to={`/#services`}>{nav.title}</Link> :
-                <a href={`#${nav.id}`}>
-                  {nav.title}
-                </a>
-              }
-          </li>
-        ))}
+    <nav
+      className="
+        relative flex w-full items-center justify-between
+        border-b border-slate-200 bg-white
+        px-4 py-2 shadow-[0_4px_20px_rgba(15,23,42,0.08)]
+        sm:px-8 lg:px-12
+      "
+    >
+      {/* Logo */}
+      <Link
+        to="/#home"
+        className="flex shrink-0 items-center"
+        onClick={() => setToggle(false)}
+      >
+        <img
+          src={logo}
+          title="PVP Construction"
+          alt="PVP Construction"
+          className="
+            h-auto w-[155px] object-contain
+            sm:w-[185px]
+            md:w-[220px]
+          "
+        />
+      </Link>
+
+      {/* Desktop navigation */}
+      <ul className="hidden flex-1 items-center justify-end gap-8 sm:flex lg:gap-11">
+        {navLinks.map((nav, index) => {
+          const isProjects = nav.id.toLowerCase() === 'projects'
+
+          return (
+            <li
+              key={nav.id}
+              className="font-poppins text-[16px] font-medium uppercase"
+            >
+              <Link
+                smooth
+                to={getLinkDestination(nav)}
+                className={
+                  isProjects
+                    ? `
+                      inline-flex items-center justify-center
+                      bg-[#00ADED] px-6 py-3 text-white
+                      transition duration-300
+                      hover:bg-[#0088B5]
+                    `
+                    : `
+                      relative py-3 text-slate-800
+                      transition duration-300
+                      hover:text-[#00ADED]
+                      after:absolute after:bottom-1 after:left-0
+                      after:h-[2px] after:w-0 after:bg-[#00ADED]
+                      after:transition-all after:duration-300
+                      hover:after:w-full
+                    `
+                }
+              >
+                {nav.title}
+              </Link>
+            </li>
+          )
+        })}
       </ul>
-      <div className='sm:hidden flex flex-1 justify-end items-center'>
+
+      {/* Mobile menu button */}
+      <button
+        type="button"
+        className="flex items-center justify-center sm:hidden"
+        onClick={() => setToggle((previous) => !previous)}
+        aria-label={toggle ? 'Close menu' : 'Open menu'}
+        aria-expanded={toggle}
+      >
         <img
           src={toggle ? close : menu}
-          alt="menu"
-          title="menu"
-          className="w-[40px] h-[40px] pr-3 object-contain filter invert-[100%] sepia-[0%] saturate-[0%] brightness-[100%] contrast-[100%]"
-          onClick={() => settoggle((prev) => !prev)} />
-        <div
-          className={`${toggle ? 'flex' : 'hidden'} p-6 text-white bg-primary-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] rounded-xl sidebar`}
-        >
-          <ul className="list-none flex justify-end flex-col items-center flex-1" >
-            {navLinks.map((nav, index) => (
+          alt=""
+          className="h-8 w-8 object-contain"
+        />
+      </button>
+
+      {/* Mobile navigation */}
+      <div
+        className={`
+          absolute right-4 top-full z-50 mt-3
+          w-[230px] rounded-xl border border-slate-200
+          bg-white p-5 shadow-2xl
+          ${toggle ? 'flex' : 'hidden'}
+          sm:hidden
+        `}
+      >
+        <ul className="flex w-full flex-col">
+          {navLinks.map((nav) => {
+            const isProjects = nav.id.toLowerCase() === 'projects'
+
+            return (
               <li
                 key={nav.id}
-                className={`font-poppins 
-                font-normal cursor-pointer text-[16px] 
-            ${index === navLinks.length - 1 ? 'mr-0' : 'mb-4'}
-            uppercase`}
+                className="font-poppins text-[15px] font-medium uppercase"
               >
-                {
-                nav.id == 'Projects'? <Link to={`/${nav.id}#Projects`}>{nav.title}</Link> : nav.id == 'home'? 
-                <Link to={`/#home`}>{nav.title}</Link> : 
-                nav.id == 'services'? <Link to={`/#services`}>{nav.title}</Link> :
-                <a href={`#${nav.id}`}>
+                <Link
+                  smooth
+                  to={getLinkDestination(nav)}
+                  onClick={() => setToggle(false)}
+                  className={
+                    isProjects
+                      ? `
+                        mt-2 block bg-[#00ADED] px-4 py-3
+                        text-center text-white
+                      `
+                      : `
+                        block border-b border-slate-100
+                        px-2 py-4 text-slate-800
+                        transition hover:text-[#00ADED]
+                      `
+                  }
+                >
                   {nav.title}
-                </a>
-              }
+                </Link>
               </li>
-            ))}
-          </ul>
-        </div>
+            )
+          })}
+        </ul>
       </div>
     </nav>
   )
 }
-
 
 export default Navbar

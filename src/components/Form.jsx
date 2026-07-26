@@ -16,7 +16,7 @@ const Form = () => {
             {/* <input type="file" className="mt-[15px] h-[50px] text-white" name="attachment" /> */}
             <div data-netlify-recaptcha="true"></div>
             <input type="hidden" name="form-name" value="contact_form" />
-            <input type="submit" value="Envoyer" className={`mt-[15px] bg-[#3D8457] md:h-[50px] h-[35px] uppercase text-white 
+            <input type="submit" value="Envoyer" className={`mt-[15px] bg-[#00ADED] md:h-[50px] h-[35px] uppercase text-white 
           font-semibold cursor-pointer`} />
         </form>
     </div>
