@@ -39,7 +39,16 @@ import {
   aeq,
   ccq,
   residential_bg,
-  commercial_bg
+  commercial_bg,
+  client1,
+  client2,
+  client3,
+  client4,
+  client5,
+  client6,
+  client7,
+  client8,
+  client9,
 } from "../assets";
 
 export const navLinks = [
@@ -170,7 +179,9 @@ export const projects = [
     title: "Titre de Project 3",
     category: ["commercial","all","renovation"],
     images: [
-      p19, p20, p21,
+      // p19, 
+      p20, 
+      // p21,
       p14, p15, p16, p17, p18,  
       p1,
       p2,
@@ -242,14 +253,72 @@ export const certificats = [
     alt: "aeq",
   },
   {
+    id: 4,
+    title: "amp",
+    image: amp,
+    alt: "amp",
+  },
+  {
     id: 5,
     title: "ccq",
     image: ccq,
     alt: "ccq",
   },
-{    id: 4,
-    title: "amp",
-    image: amp,
-    alt: "amp",
+];
+
+export const clients = [
+  {
+    id: 0,
+    title: "Client1",
+    image: client1,
+    alt: "Client1",
+  },
+  {
+    id: 1,
+    title: "Client2",
+    image: client2,
+    alt: "Client2",
+  },
+  {
+    id: 2,
+    title: "Client3",
+    image: client3,
+    alt: "Client3",
+  },
+  {
+    id: 3,
+    title: "Client4",
+    image: client4,
+    alt: "Client4",
+  },
+  {
+    id: 4,
+    title: "Client5",
+    image: client5,
+    alt: "Client5",
+  },
+  {
+    id: 5,
+    title: "Client6",
+    image: client6,
+    alt: "Client6",
+  },
+  {
+    id: 6,
+    title: "Client7",
+    image: client7,
+    alt: "Client7",
+  },
+  {
+    id: 7,
+    title: "Client8",
+    image: client8,
+    alt: "Client8",
+  },
+  {
+    id: 8,
+    title: "Client9",
+    image: client9,
+    alt: "Client9",
   },
 ];

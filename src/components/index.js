@@ -8,6 +8,7 @@ import Form from "./Form"
 import Projects from "./Projects";
 import Project from "./Project";
 import Certificats from "./Certificats";
+import Clients from "./Clients";
 
 
 export {
@@ -21,4 +22,5 @@ export {
   Projects,
   Project,
   Certificats,
+  Clients
 };

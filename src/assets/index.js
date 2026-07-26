@@ -45,6 +45,16 @@ import residential_bg from ".//residential_bg.jpg"
 import commercial_bg from ".//commercial_bg.jpg"
 import gestion_bg from ".//gestion_bg.jpg"
 import institutionnel_bg from ".//institutionnel_bg.png"
+import client1 from ".//Client1.png"
+import client2 from ".//Client2.png"
+import client3 from ".//Client3.png"
+import client4 from ".//Client4.png"
+import client5 from ".//Client5.png"
+import client6 from ".//Client6.png"
+import client7 from ".//Client7.jpg"
+import client8 from ".//Client8.png"
+import client9 from ".//Client9.png"
+
 
 
 
@@ -95,5 +105,14 @@ export {
   p19,
   p20,
   p21,
-  pmp
+  pmp,
+  client1,
+  client2,
+  client3,
+  client4,
+  client5,
+  client6,
+  client7,
+  client8,
+  client9
 };

@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import styles from './style'
-import { Navbar, Hero, Services, Footer, Copyright, Projects, Certificats } from './components'
+import { Navbar, Hero, Services, Footer, Copyright, Projects, Certificats, Clients } from './components'
 import { Route, Routes } from 'react-router-dom'
 
 
@@ -31,7 +31,7 @@ const App = () => {
             <Route path={"/"} element={
               <div>
                 <Services changeCategory={changeCategory} />
-                
+                <Clients />
                 <Certificats />
               </div>
 
