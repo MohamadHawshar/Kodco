@@ -54,6 +54,7 @@ import client6 from ".//Client6.png"
 import client7 from ".//Client7.jpg"
 import client8 from ".//Client8.png"
 import client9 from ".//Client9.png"
+import ConstructionStockEdited from ".//ConstructionStockEdited.jpg"
 
 
 
@@ -114,5 +115,6 @@ export {
   client6,
   client7,
   client8,
-  client9
+  client9,
+  ConstructionStockEdited
 };
