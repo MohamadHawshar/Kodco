@@ -34,6 +34,10 @@ import p18 from ".//p18.jpeg";
 import p19 from ".//p19.jpeg";
 import p20 from ".//p20.jpeg";
 import p21 from ".//p21.jpeg";
+import p22 from ".//p22.jpg";
+import p23 from ".//p23.jpg";
+import p24 from ".//p24.jpeg";
+import p25 from ".//p25.jpeg";
 import acq from ".//acq.png"
 import rbq from ".//rbq.svg"
 import oiq from ".//oiq.webp"
@@ -107,6 +111,10 @@ export {
   p19,
   p20,
   p21,
+  p22,
+  p23,
+  p24,
+  p25,
   pmp,
   client1,
   client2,
